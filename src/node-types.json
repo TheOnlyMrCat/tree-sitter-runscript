@@ -1,0 +1,140 @@
+[
+  {
+    "type": "body",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "executor",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "header",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "executor",
+          "named": true
+        },
+        {
+          "type": "phase",
+          "named": true
+        },
+        {
+          "type": "target",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "option",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "option_name",
+          "named": true
+        },
+        {
+          "type": "option_params",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "option_name",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "option_params",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "phase",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "runscript",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "option",
+          "named": true
+        },
+        {
+          "type": "script",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "script",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "body",
+          "named": true
+        },
+        {
+          "type": "header",
+          "named": true
+        },
+        {
+          "type": "option",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "target",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "\n",
+    "named": false
+  },
+  {
+    "type": ":",
+    "named": false
+  },
+  {
+    "type": "::",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "comment",
+    "named": true
+  }
+]
