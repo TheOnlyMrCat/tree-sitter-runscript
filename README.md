@@ -10,7 +10,7 @@ Install [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter).
 
 #### Add the parser
 
-Source: <https://github.com/nvim-treesitter/nvim-treesitter#adding-parsers>
+Further info: <https://github.com/nvim-treesitter/nvim-treesitter#adding-parsers>
 
 Add the following lua code to your startup file:
 
@@ -31,7 +31,7 @@ After doing this, start `nvim` and run `:TSInstall runscript` and `:TSInstall ba
 
 #### Add queries
 
-Source: <https://github.com/nvim-treesitter/nvim-treesitter#highlight>
+Further info: <https://github.com/nvim-treesitter/nvim-treesitter#highlight>
 
 Copy the contents of [`queries/nvim/`](https://git.sr.ht/~theonlymrcat/tree-sitter-runscript/tree/master/item/queries/nvim) into
 `.config/nvim/queries/runscript`.
@@ -55,7 +55,7 @@ Or the equivalent vimscript code.
 
 #### Enable tree-sitter syntax highlighting
 
-Source: <https://github.com/nvim-treesitter/nvim-treesitter#highlight>
+Futher info: <https://github.com/nvim-treesitter/nvim-treesitter#highlight>
 
 Add the following lua code to your startup file:
 
@@ -89,6 +89,7 @@ source = { git = "https://git.sr.ht/~theonlymrcat/tree-sitter-runscript", rev = 
 ```
 
 Then copy the contents of [`queries/helix/`](https://git.sr.ht/~theonlymrcat/tree-sitter-runscript/tree/master/item/queries/helix)
-into `runtime/queries/runscript/` (where `runtime` is the helix runtime directory; `/var/lib/helix/runtime` on Linux)
+into `runtime/queries/runscript/` (where `runtime` is the helix runtime directory; `$HOME/.config/helix/runtime` on Linux/Mac,
+`%appdata%\helix\runtime` on Windows)
 
 To find your runtime directory, check the first few lines of output of `hx --health`
